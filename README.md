@@ -34,11 +34,13 @@ A high-speed packet sensor watches every connection on the network. A Python bra
 
 > SENTRY isn't a science project. Every layer is wired to every other layer end-to-end. **The CCTV camera, the security guard, the screen wall, the walkie-talkie — all built from scratch, all talking.**
 
-## Demo — guided 30-second walkthrough
+## Demo — guided 30-second walkthrough (Full HD 1080p)
 
-Watch the full story unfold below (auto-plays in your browser):
+Click the play button below — embedded HD video, plays inline:
 
-![SENTRY demo](docs/demo.gif)
+https://github.com/Danish-spidy/sentry-showcase/raw/main/docs/demo.mp4
+
+<video src="https://github.com/Danish-spidy/sentry-showcase/raw/main/docs/demo.mp4" controls width="100%"></video>
 
 Captions in the video show each step:
 
@@ -48,9 +50,9 @@ Captions in the video show each step:
 4. **STEP 4** — Gemini AI writes story + MITRE ATT&CK map
 5. **STEP 5** — One-click BLOCK quarantines the attacker
 
-Higher-quality MP4: [`docs/demo.mp4`](docs/demo.mp4) (1.7 MB).
+> If the video does not auto-embed in your browser, [click here to watch in HD](docs/demo.mp4) (3.3 MB Full HD MP4).
 
-![Hero screenshot](docs/hero.png)
+![Hero screenshot — Full HD](docs/hero.png)
 
 ## Architecture
 
