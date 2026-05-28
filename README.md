@@ -36,11 +36,7 @@ A high-speed packet sensor watches every connection on the network. A Python bra
 
 ## Demo — guided 30-second walkthrough (Full HD 1080p)
 
-Click the play button below — embedded HD video, plays inline:
-
-https://github.com/Danish-spidy/sentry-showcase/raw/main/docs/demo.mp4
-
-<video src="https://github.com/Danish-spidy/sentry-showcase/raw/main/docs/demo.mp4" controls width="100%"></video>
+https://github.com/user-attachments/assets/bf539754-09c9-4993-9375-3da9f5cbf47d
 
 Captions in the video show each step:
 
@@ -49,8 +45,6 @@ Captions in the video show each step:
 3. **STEP 3** — Port scan + brute force + MITM detected
 4. **STEP 4** — Gemini AI writes story + MITRE ATT&CK map
 5. **STEP 5** — One-click BLOCK quarantines the attacker
-
-> If the video does not auto-embed in your browser, [click here to watch in HD](docs/demo.mp4) (3.3 MB Full HD MP4).
 
 ![Hero screenshot — Full HD](docs/hero.png)
 
