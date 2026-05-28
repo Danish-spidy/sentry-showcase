@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 720" font-family="SF Mono, Consolas, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1430"/>
+      <stop offset="100%" stop-color="#04060c"/>
+    </linearGradient>
+    <linearGradient id="brain" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a2547"/>
+      <stop offset="100%" stop-color="#0e1428"/>
+    </linearGradient>
+    <linearGradient id="sensor" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1c2a5a"/>
+      <stop offset="100%" stop-color="#0a0f1c"/>
+    </linearGradient>
+    <linearGradient id="ui" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1d3a3f"/>
+      <stop offset="100%" stop-color="#0a1c20"/>
+    </linearGradient>
+    <linearGradient id="mobile" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a1d2c"/>
+      <stop offset="100%" stop-color="#0a0f1c"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#5eead4"/>
+    </marker>
+    <marker id="arrowRed" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ff4d6d"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="720" fill="url(#bg)"/>
+
+  <g opacity="0.15" stroke="#7c9bff" stroke-width="0.5">
+    <path d="M0,80 L1400,80 M0,160 L1400,160 M0,240 L1400,240 M0,320 L1400,320 M0,400 L1400,400 M0,480 L1400,480 M0,560 L1400,560 M0,640 L1400,640"/>
+    <path d="M100,0 L100,720 M200,0 L200,720 M300,0 L300,720 M400,0 L400,720 M500,0 L500,720 M600,0 L600,720 M700,0 L700,720 M800,0 L800,720 M900,0 L900,720 M1000,0 L1000,720 M1100,0 L1100,720 M1200,0 L1200,720 M1300,0 L1300,720"/>
+  </g>
+
+  <text x="700" y="50" text-anchor="middle" font-size="26" font-weight="700" fill="#5eead4" letter-spacing="6">SENTRY</text>
+  <text x="700" y="78" text-anchor="middle" font-size="13" fill="#6a7aa3" letter-spacing="2">AI · NETWORK · INTRUSION · DETECTION · SYSTEM</text>
+
+  <g>
+    <rect x="60" y="170" width="240" height="160" rx="14" fill="url(#sensor)" stroke="#7c9bff" stroke-width="1.5"/>
+    <text x="180" y="200" text-anchor="middle" font-size="11" fill="#7c9bff" letter-spacing="3">LAYER · 1</text>
+    <text x="180" y="226" text-anchor="middle" font-size="20" font-weight="700" fill="#e6edff">C SENSOR</text>
+    <text x="180" y="252" text-anchor="middle" font-size="11" fill="#5eead4">Npcap · WinHTTP</text>
+    <text x="180" y="285" text-anchor="middle" font-size="11" fill="#a8b8e0">Line-rate packet capture</text>
+    <text x="180" y="302" text-anchor="middle" font-size="11" fill="#a8b8e0">ARP · IP · TCP · UDP parse</text>
+    <text x="180" y="319" text-anchor="middle" font-size="11" fill="#a8b8e0">JSON over HTTP POST</text>
+  </g>
+
+  <g>
+    <rect x="60" y="370" width="240" height="160" rx="14" fill="url(#sensor)" stroke="#7c9bff" stroke-width="1" stroke-dasharray="6 3" opacity="0.85"/>
+    <text x="180" y="400" text-anchor="middle" font-size="11" fill="#7c9bff" letter-spacing="3">LAYER · 1 · ALT</text>
+    <text x="180" y="426" text-anchor="middle" font-size="20" font-weight="700" fill="#e6edff">PY SENSOR</text>
+    <text x="180" y="452" text-anchor="middle" font-size="11" fill="#5eead4">scapy · requests</text>
+    <text x="180" y="485" text-anchor="middle" font-size="11" fill="#a8b8e0">Cross-platform sniffer</text>
+    <text x="180" y="502" text-anchor="middle" font-size="11" fill="#a8b8e0">--sim mode (no Npcap)</text>
+    <text x="180" y="519" text-anchor="middle" font-size="11" fill="#a8b8e0">Demo &amp; dev capture</text>
+  </g>
+
+  <g>
+    <rect x="430" y="200" width="320" height="320" rx="16" fill="url(#brain)" stroke="#5eead4" stroke-width="2"/>
+    <text x="590" y="232" text-anchor="middle" font-size="11" fill="#5eead4" letter-spacing="3">LAYER · 2</text>
+    <text x="590" y="262" text-anchor="middle" font-size="24" font-weight="700" fill="#e6edff">PYTHON BRAIN</text>
+    <text x="590" y="282" text-anchor="middle" font-size="11" fill="#a8b8e0">FastAPI · Socket.IO · asyncio</text>
+
+    <line x1="460" y1="305" x2="720" y2="305" stroke="#1f2a4a"/>
+
+    <g transform="translate(450, 320)">
+      <rect width="280" height="58" rx="8" fill="#0e1428" stroke="#7c9bff"/>
+      <text x="14" y="22" font-size="11" fill="#7c9bff" letter-spacing="2">DETECTOR · heuristics</text>
+      <text x="14" y="42" font-size="10" fill="#a8b8e0">port-scan · brute-force · MITM · beacon · DDoS · exfil</text>
+    </g>
+
+    <g transform="translate(450, 390)">
+      <rect width="280" height="58" rx="8" fill="#0e1428" stroke="#5eead4"/>
+      <text x="14" y="22" font-size="11" fill="#5eead4" letter-spacing="2">AI ANALYST · gemini 2.5 flash</text>
+      <text x="14" y="42" font-size="10" fill="#a8b8e0">story · MITRE ATT&amp;CK · confidence · action</text>
+    </g>
+
+    <g transform="translate(450, 460)">
+      <rect width="280" height="48" rx="8" fill="#0e1428" stroke="#7c9bff"/>
+      <text x="14" y="22" font-size="11" fill="#7c9bff" letter-spacing="2">SOCKET.IO HUB</text>
+      <text x="14" y="38" font-size="10" fill="#a8b8e0">live fanout: threat, block, hello</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="900" y="170" width="280" height="160" rx="14" fill="url(#ui)" stroke="#5eead4" stroke-width="1.5"/>
+    <text x="1040" y="200" text-anchor="middle" font-size="11" fill="#5eead4" letter-spacing="3">LAYER · 3</text>
+    <text x="1040" y="226" text-anchor="middle" font-size="20" font-weight="700" fill="#e6edff">JS DASHBOARD</text>
+    <text x="1040" y="252" text-anchor="middle" font-size="11" fill="#5eead4">D3.js · Socket.IO client</text>
+    <text x="1040" y="285" text-anchor="middle" font-size="11" fill="#a8b8e0">Live network topology</text>
+    <text x="1040" y="302" text-anchor="middle" font-size="11" fill="#a8b8e0">Threat feed · MITRE map</text>
+    <text x="1040" y="319" text-anchor="middle" font-size="11" fill="#a8b8e0">One-click block button</text>
+  </g>
+
+  <g>
+    <rect x="900" y="370" width="280" height="160" rx="14" fill="url(#mobile)" stroke="#ff4d6d" stroke-width="1.5"/>
+    <text x="1040" y="400" text-anchor="middle" font-size="11" fill="#ff4d6d" letter-spacing="3">LAYER · 4</text>
+    <text x="1040" y="426" text-anchor="middle" font-size="20" font-weight="700" fill="#e6edff">ANDROID APP</text>
+    <text x="1040" y="452" text-anchor="middle" font-size="11" fill="#ff4d6d">Java · Socket.IO · OkHttp</text>
+    <text x="1040" y="485" text-anchor="middle" font-size="11" fill="#a8b8e0">Push alerts + vibrate</text>
+    <text x="1040" y="502" text-anchor="middle" font-size="11" fill="#a8b8e0">One-tap host quarantine</text>
+    <text x="1040" y="519" text-anchor="middle" font-size="11" fill="#a8b8e0">Auto-reconnect WS</text>
+  </g>
+
+  <line x1="305" y1="250" x2="425" y2="280" stroke="#5eead4" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="365" y="248" text-anchor="middle" font-size="10" fill="#5eead4">POST /ingest</text>
+
+  <line x1="305" y1="450" x2="425" y2="400" stroke="#5eead4" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="365" y="436" text-anchor="middle" font-size="10" fill="#5eead4">POST /ingest</text>
+
+  <line x1="755" y1="280" x2="895" y2="240" stroke="#5eead4" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="825" y="248" text-anchor="middle" font-size="10" fill="#5eead4">WebSocket · threat</text>
+
+  <line x1="755" y1="400" x2="895" y2="440" stroke="#5eead4" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="825" y="408" text-anchor="middle" font-size="10" fill="#5eead4">WebSocket · push</text>
+
+  <line x1="895" y1="490" x2="755" y2="490" stroke="#ff4d6d" stroke-width="2" stroke-dasharray="6 3" marker-end="url(#arrowRed)"/>
+  <text x="825" y="510" text-anchor="middle" font-size="10" fill="#ff4d6d">POST /block</text>
+
+  <g transform="translate(60, 600)">
+    <text font-size="11" fill="#7c9bff" letter-spacing="3">SECURITY · ATT&amp;CK · CATALOG</text>
+    <text y="22" font-size="11" fill="#a8b8e0">T1046 · T1110 · T1071 · T1557.002 · T1498 · T1041 · T1095</text>
+  </g>
+
+  <g transform="translate(900, 600)">
+    <text font-size="11" fill="#5eead4" letter-spacing="3">FOUR LANGUAGES · ONE STACK</text>
+    <text y="22" font-size="11" fill="#a8b8e0">C · Python · JavaScript · Java</text>
+  </g>
+
+  <text x="700" y="690" text-anchor="middle" font-size="10" fill="#6a7aa3">github.com/Danish-spidy/sentry · (c) Danish 2026</text>
+</svg>
